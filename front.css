@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@500&family=Poppins:wght@300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navigation Bar */
+.navbar{
+  background-color: #c8750c;
+}
+.navbar .container-fluid .nav-item{
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 3px 5px;
+}
+.navbar .container-fluid .nav-link:hover{
+  border-bottom: solid 2px white;
+}
+
+/* Background */
+.background{
+  background-image: url('./bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+/* Intro Text */
+.intro{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.intro h1{
+  position: absolute;
+  margin-top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1.7px solid white;
+  border-style: dashed;
+  padding: 14px;
+}
+.overlay{
+  position: absolute;
+  margin-top: 32%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+.virtual{
+  font-family: 'Comforter Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+}
+.visions{
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 0.5em;
+  margin-left: 2rem;
+}
+/* Intro Text Bottom */
+.intro-2 p{
+  position: absolute;
+  bottom: 27vh;
+  left: 38%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+/* Footer */
+.footer{
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+/* Open Magazine Button */
+.background .btn{
+  min-width: 20px;
+  position: absolute;
+  bottom: 25vh;
+  left: 60vw;
+  color: white;
+  background: rgba(255, 255, 255, 0.329);
+  border-radius: 15px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+.background .btn:hover{
+  background-color: #c8750c;
+  color: white;
+}
+.background .btn:hover::after{
+  color: white;
+}
+/* Discover background */
+.discover-bg{
+  background-color: #F7D488;
+  height: 181px; 
+}
+/* FIND SOMETHING TO LOVE TEXT */
+.discover-bg h1{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 154.9%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.115em;
+  color: white;
+}
+.find-text{
+  position: absolute;
+  width: 215px;
+  height: 32px;
+  left: 15px;
+  top: 120px;
+}
+.plate img{
+  position: absolute;
+  width: 166px;
+  height: 170px;
+  left: 238px;
+  top: 75px;
+}
+/* Small Screens */
+@media screen and (min-width: 120px) and (max-width: 440px){
+  .background .btn{
+    left: 47vw;
+    bottom: 18vh;
+    padding: 3px;
+  }
+  .intro h1{
+    font-size: 12px;
+  }
+  .background{
+    height: 89vh;
+  }
+  .overlay{
+    margin-top: 24vh;
+  }
+}
+/* TABLET VIEW */
+@media screen and (min-width: 724px) and (max-width: 1280px) and (min-height: 500px) and (max-height: 960px){ 
+  .background .btn{
+    bottom: 20vh;
+    left: 75%;
+  }
+  .navbar .container-fluid .nav-item{
+    padding: 10px;
+  }
+  .background{
+    height: 92.4vh;
+  }
+  .overlay{
+    margin-top: 26vh;
+  }
+  .navbar .container-fluid .nav-item{
+    font-size: 15px;
+  }
+  .intro h1 {
+    font-size: 21px;
+    margin-top: 5%;
+  }
+  .intro-2 p{
+    width: 50vw;
+    bottom: 25vh;
+    left: 30%;
+    font-size: 15px;
+  }
+  .footer{
+    font-size: 15px;
+  }
+}
+/* DESKTOP VIEW */
+ @media screen and (min-width: 1280px) and (max-width: 1920px) and (min-height: 720px) and (max-height: 1117px){
+  .background .btn{
+    bottom: 20vh;
+    left: 85%;
+  }
+  .navbar .container-fluid .nav-item a{
+    padding: 2px 15px;
+  }
+  .background{
+    height: 92.4vh;
+  }
+  .overlay{
+    margin-top: 15%;
+  }
+  .navbar .container-fluid .nav-item{
+    font-size: 15px;
+  }
+  .intro h1{
+  font-size: 22px;
+  margin-top: 5%;
+  }
+  .intro-2 p{
+  width: 30vw;
+  left: 20%;
+  font-size: 15px;
+  }
+  .footer{
+    font-size: 15px;
+  }
+}
