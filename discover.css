@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* NAVIGATION BAR */
+nav{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px 20px;  
+    background-color: #202D36;
+}
+.logo{
+    width: 50px;
+    height: 45px;
+}
+nav ul{
+    flex: 1;
+    text-align: center;
+    padding-right: 10px;
+    margin-right: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+nav ul li a:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #c8750c;
+    transition: width 0.3s;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+nav .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-right: 10px;
+}
+.dropdown_menu{
+  position: absolute;  
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 150px;
+}
+.dropdown_menu li{
+    list-style-type: none;
+    margin: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu a:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #c8750c;
+    transition: width 0.3s;
+}
+.dropdown_menu a:hover:after{
+    width: 100%;
+}
+  /* Footer */
+  footer {
+    position: relative;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    background: #202D36;
+    color: white;
+}
+footer h2{
+    margin-top: 10px;
+    font-family: 'Comforter Brush';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+footer p{
+    font-family: 'Poppins';
+    letter-spacing: .5em;
+    padding: 10px;
+    font-size: 10px;
+}
+  /* footer p{
+    transform: translateX(-50%);
+    color: rgb(18, 18, 18);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+  } */
+  /* footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    background-color: #202D36;
+  } */
+  
+@media screen and (min-width: 120px) and (max-width: 356px){
+    nav ul{
+        padding: 10px;
+    }
+    nav .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        width: 220px;
+        display: block;
+    }
+    nav ul li{
+        display: none;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+    footer{
+    font-size: xx-small;
+    }
+}
+@media screen and (min-width: 357px) and (max-width: 614px){
+    nav ul li{
+        display: none;
+    }
+    nav .toggle_btn{
+        display: block;
+
+    }
+    .dropdown_menu{
+        width: 250px;
+        display: block;
+    }
+    .overlay{
+        margin-top: 25vh;
+    }
+    .intro-2 p{
+        bottom: 29vh;
+    }
+    footer{
+        font-size: 10px;
+        min-width: 280px;
+    }
+    .text .btn{
+        bottom: 20vh;
+        min-width: 170px;
+        right: 22vh;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+}
+/* TABLETS */
+@media screen and (min-width: 615px) and (max-width: 1280px){
+    nav ul li{
+        padding: 10px 3px;
+        margin-left: 10px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+    nav .toggle_btn{
+        display: none;
+    }
+    .dropdown_menu{
+        display: none;
+    }
+    footer{
+        font-size: 10px;
+    }
+}
+/* DESKTOPS */
+@media screen and (min-width: 1281px) and (max-width: 1920px){
+    nav ul li{
+        margin: 10px 10px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+    nav .toggle_btn{
+        display: none;
+    }
+    .dropdown_menu{
+        display: none;
+    }
+}
