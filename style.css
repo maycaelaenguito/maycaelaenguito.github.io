@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    
+}
+.logo{
+    width: 50px;
+    height: 45px;
+}
+nav ul{
+    flex: 1;
+    text-align: center;
+    padding-right: 10px;
+    margin-right: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+nav ul li a:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+nav .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-right: 10px;
+}
+.dropdown_menu{
+  position: absolute;  
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 150px;
+}
+.dropdown_menu li{
+    list-style-type: none;
+    margin: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu a:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+.dropdown_menu a:hover:after{
+    width: 100%;
+}
+/* TEXT */
+.intro{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .intro h1{
+    position: absolute;
+    margin-top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1.7px solid white;
+    border-style: dashed;
+    padding: 14px;
+  }
+  .overlay{
+    position: absolute;
+    margin-top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
+  .virtual{
+    font-family: 'Comforter Brush';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+  }
+  .visions{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 0.5em;
+    margin-left: 2rem;
+  }
+  /* Intro Text Bottom */
+  .intro-2 p{
+    position: absolute;
+    bottom: 25vh;
+    left: 38%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+  }
+  /* Footer */
+  footer{
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+  }
+  /* Open Magazine Button */
+.text .btn{
+    position: absolute;
+    bottom: 25vh;
+    left: 50vw;
+    color: white;
+    background: rgba(255, 255, 255, 0.329);
+    border-radius: 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .text .btn:hover{
+    background-color: #c8750c;
+    color: white;
+  }
+  .text .btn:hover::after{
+    color: white;
+  }
+@media screen and (min-width: 120px) and (max-width: 356px){
+    nav ul{
+        padding: 10px;
+    }
+    nav .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        width: 220px;
+        display: block;
+    }
+    nav ul li{
+        display: none;
+    }
+    .intro h1{
+        font-size: 12px;
+    }
+    .overlay{
+        top: 20vh;
+    }
+    .virtual{
+        font-size: 70px;
+    }
+    .visions{
+        font-size: 20px;
+    }
+    .intro-2 p{
+        bottom: 30vh;
+        font-size: 10px;
+    }
+    .text .btn{
+        font-size: 10px;
+        width: 120px;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+    footer{
+    font-size: xx-small;
+    }
+}
+@media screen and (min-width: 357px) and (max-width: 614px){
+    nav ul li{
+        display: none;
+    }
+    nav .toggle_btn{
+        display: block;
+
+    }
+    .dropdown_menu{
+        width: 250px;
+        display: block;
+    }
+    .overlay{
+        margin-top: 25vh;
+    }
+    .intro-2 p{
+        bottom: 29vh;
+    }
+    footer{
+        font-size: 10px;
+        min-width: 280px;
+    }
+    .text .btn{
+        bottom: 20vh;
+        min-width: 170px;
+        right: 22vh;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+}
+/* TABLETS */
+@media screen and (min-width: 615px) and (max-width: 1280px){
+    nav ul li{
+        padding: 10px 3px;
+        margin-left: 10px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+    nav .toggle_btn{
+        display: none;
+    }
+    .dropdown_menu{
+        display: none;
+    }
+    .overlay{
+        top: 23vh;
+    }
+    .intro-2 p{
+        bottom: 30vh;
+    }
+    .text .btn{
+        right: 10vw;
+        width: 170px;
+    }
+    footer{
+        font-size: 10px;
+    }
+}
+/* DESKTOPS */
+@media screen and (min-width: 1281px) and (max-width: 1920px){
+    nav ul li{
+        margin: 10px 10px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+    nav .toggle_btn{
+        display: none;
+    }
+    .dropdown_menu{
+        display: none;
+    }
+    .overlay{
+        top: 30vh;
+    }
+    .intro-2 p{
+        bottom: 30vh;
+    }
+    .text .btn{
+        bottom: 20vh;
+        right: 10vw;
+        width: 170px;
+    }
+}
