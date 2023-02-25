@@ -51,7 +51,7 @@ nav ul li a:after{
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    background: #c8750c;
+    background: #ffffff;
     transition: width 0.3s;
 }
 nav ul li a:hover:after{
@@ -69,7 +69,7 @@ nav .toggle_btn{
   top: 60px;
   height: 0;
   width: 300px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #c8750c;
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
@@ -94,7 +94,7 @@ nav .toggle_btn{
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    background: #c8750c;
+    background: #ffffff;
     transition: width 0.3s;
 }
 .dropdown_menu a:hover:after{
