@@ -184,9 +184,7 @@ nav .toggle_btn{
     background-color: #c8750c;
     color: white;
   }
-  .text .btn:hover::after{
-    color: white;
-  }
+
 @media screen and (min-width: 120px) and (max-width: 356px){
     nav ul{
         padding: 10px;
