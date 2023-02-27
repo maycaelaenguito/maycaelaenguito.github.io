@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@500;600;700;800;900&family=Open+Sans:wght@800&family=Playfair+Display:wght@800&family=Poppins:wght@300;400;500&display=swap');
 body{
     width: 100%;
     height: 100vh;
@@ -126,7 +127,10 @@ footer p{
 /* GRID CONTAINER */
 .grid-container{
     display: flex;
-    margin-top: 5vh;
+    margin-top: 2vh;
+}
+.images p{
+    margin-left: 2vw;
 }
 .images, .images-col2{
     text-align: center;
@@ -146,7 +150,12 @@ footer p{
 }
 .images li, .images-col2 li{
     list-style: upper-roman;
+    font-weight: 400;;
+}
+.images ol, .images-col2 ol{
+    font-size: 30px;
     font-weight: 400;
+    font-family: 'Abril Fatface', cursive;
 }
 .grid-container .btn{
     background-color: #202D36;
@@ -164,9 +173,14 @@ footer p{
 .text-box .btn{
     margin-bottom: 2vh;
 }
-.images ol li, .images-col2 ol li{
-    font-weight: 400;
-    font-family: 'Abril Fatface', cursive;
+.text-center{
+    margin-top: 3vh;
+}
+h1{
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 64px;
+    letter-spacing: .1em;
 }
 
 @media screen and (min-width: 120px) and (max-width: 533px){
@@ -192,19 +206,21 @@ footer p{
     }
     .grid-container{
         display: grid;
-        
     }
     .images img, .images-col2 img{
-        width: 100px;
+        width: 180px;
     }
     .text-box {
         margin-left: 10vw;
         margin-right: 8vw;
     }
-    .images ol li, .images-col2 ol li{
-        font-size: 20px;
-        margin: 5vw;
+    .images li, .images-col2 li{
+        margin: 4vw;
     }
+    .images ol, .images-col2 ol{
+        font-size: 20px;
+    }
+
 }
 @media screen and (min-width: 534px) and (max-width: 727px){
     nav ul li{
@@ -233,10 +249,9 @@ footer p{
         margin: 0 4vw;
     }
     .images img, .images-col2 img{
-        width: 100px;
+        width: 180px;
     }
     .images ol li, .images-col2 ol li{
-        font-size: 20px;
         margin: 3vw;
     }
 }
@@ -330,9 +345,6 @@ footer p{
     }
     .images p, .images-col2 p{
         font-size: 15px;
-    }
-    .images ol li, .images-col2 ol li{
-        font-size: 20px;
     }
     .text-box{
         width: 40vw;

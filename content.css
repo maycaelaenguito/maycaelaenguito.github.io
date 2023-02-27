@@ -126,7 +126,7 @@ footer p{
 /* GRID CONTAINER */
 .grid-container{
     display: flex;
-    margin-top: 5vh;
+    margin-top: 3vh;
 }
 .images{
     text-align: center;
@@ -142,7 +142,6 @@ footer p{
 }
 .images img{
     width: 200px;
-    size: c;
     margin: 10px;
     border-radius: 10px;
 }
@@ -164,14 +163,22 @@ footer p{
     color: white;
 }
 .text-box .btn{
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
 .images ol li{
     font-size: 30px;
     font-weight: 400;
     font-family: 'Abril Fatface', cursive;
 }
-
+.text-center{
+    margin-top: 3vh;
+}
+h1{
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 64px;
+    letter-spacing: .1em;
+}
 @media screen and (min-width: 120px) and (max-width: 356px){
     nav ul{
         padding: 10px;
@@ -205,7 +212,7 @@ footer p{
         margin: 3vw;
     }
 }
-@media screen and (min-width: 357px) and (max-width: 727px){
+@media screen and (min-width: 357px) and (max-width: 532px){
     nav ul li{
         display: none;
     }
@@ -235,7 +242,7 @@ footer p{
     }
 }
 /* TABLETS */
-@media screen and (min-width: 728px) and (max-width: 894px){
+@media screen and (min-width: 533px) and (max-width: 894px){
     nav ul li{
         padding: 10px 3px;
         margin-left: 10px;
@@ -289,6 +296,12 @@ footer p{
     footer{
         font-size: 10px;
     }
+    .images ol li:nth-of-type(6){
+        break-after: column;
+    }
+    .images ol .text-box:nth-of-type(n+5){
+        break-inside: avoid;
+    }
     .images ol{
         columns: 2;
         column-gap: 10vw;
@@ -319,6 +332,12 @@ footer p{
     /* CONTENT */
     .images{
         margin: 3vw;
+    }
+    .images ol li:nth-of-type(6){
+        break-after: column;
+    }
+    .images ol .text-box:nth-of-type(n+5){
+        break-inside: avoid;
     }
     .images ol{
         columns: 2;
@@ -358,8 +377,13 @@ footer p{
         display: none;
     }
     /* CONTENT */
-    .images{
-        margin: 3vw;
+  
+    
+    .images ol li:nth-of-type(6){
+        break-after: column;
+    }
+    .images ol .text-box:nth-of-type(n+5){
+        break-inside: avoid;
     }
     .images ol{
         columns: 2;
