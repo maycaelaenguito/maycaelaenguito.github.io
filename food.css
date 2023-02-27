@@ -128,11 +128,10 @@ footer p{
     display: flex;
     margin-top: 5vh;
 }
-.images{
+.images, .images-col2{
     text-align: center;
-    margin: 0 3vw;
 }
-.images p{
+.images p, .images-col2 p{
     text-align: left;
     font-size: 10px;
     font-family: 'Montserrat';
@@ -140,13 +139,12 @@ footer p{
     font-weight: 400;
     letter-spacing: 0.05em;
 }
-.images img{
+.images img, .images-col2 img{
     width: 200px;
-    size: c;
     margin: 10px;
     border-radius: 10px;
 }
-.images li{
+.images li, .images-col2 li{
     list-style: upper-roman;
     font-weight: 400;
 }
@@ -164,15 +162,14 @@ footer p{
     color: white;
 }
 .text-box .btn{
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
-.images ol li{
-    font-size: 30px;
+.images ol li, .images-col2 ol li{
     font-weight: 400;
     font-family: 'Abril Fatface', cursive;
 }
 
-@media screen and (min-width: 120px) and (max-width: 356px){
+@media screen and (min-width: 120px) and (max-width: 533px){
     nav ul{
         padding: 10px;
     }
@@ -193,19 +190,23 @@ footer p{
     footer{
     font-size: xx-small;
     }
-    .images img{
-        width: 200px;
+    .grid-container{
+        display: grid;
+        
+    }
+    .images img, .images-col2 img{
+        width: 100px;
     }
     .text-box {
         margin-left: 10vw;
         margin-right: 8vw;
     }
-    .images ol li{
+    .images ol li, .images-col2 ol li{
         font-size: 20px;
-        margin: 3vw;
+        margin: 5vw;
     }
 }
-@media screen and (min-width: 357px) and (max-width: 727px){
+@media screen and (min-width: 534px) and (max-width: 727px){
     nav ul li{
         display: none;
     }
@@ -226,10 +227,15 @@ footer p{
         height: 45px;
     }
     .text-box {
-        margin-left: 12vw;
-        margin-right: 8vw;
+        margin-right: 2vw;
     }
-    .images ol li{
+    .images, .images-col2{
+        margin: 0 4vw;
+    }
+    .images img, .images-col2 img{
+        width: 100px;
+    }
+    .images ol li, .images-col2 ol li{
         font-size: 20px;
         margin: 3vw;
     }
@@ -260,12 +266,11 @@ footer p{
     .grid-container{
         margin-top: 2vh;
     }
-    .images ol{
-        columns: 2;
-        column-gap: 10vw;
-    }
-    .images img{
+    .images img, .images-col2 img{
         width: 200px;
+    }
+    .images, .images-col2{
+        margin: 0 4vw;
     }
 }
 @media screen and (min-width: 895px) and (max-width: 1280px){
@@ -289,17 +294,16 @@ footer p{
     footer{
         font-size: 10px;
     }
-    .images ol{
-        columns: 2;
-        column-gap: 10vw;
-    }
-    .images img{
+    .images img, .images-col2 img{
         width: 350px;
+    }
+    .images, .images-col2{
+        margin: 0 2vw;
     }
     
 }
 /* DESKTOPS */
-@media screen and (min-width: 1281px) and (max-width: 1604px){
+@media screen and (min-width: 1281px) and (max-width: 1920px){
     nav ul li{
         margin: 10px 10px;
     }
@@ -317,67 +321,21 @@ footer p{
         display: none;
     }
     /* CONTENT */
-    .images{
-        margin: 3vw;
+    .images, .images-col2{
+        margin: 2vw;
     }
-    .images ol{
-        columns: 2;
-        column-gap: 8vw;
-        column-width: 40vw;
-    }
-    .images img{
+    .images img, .images-col2 img{
         width: 500px;
         margin: 20px 0;
     }
-    .images p{
+    .images p, .images-col2 p{
         font-size: 15px;
     }
-    .images li{
-        font-size: larger;
+    .images ol li, .images-col2 ol li{
+        font-size: 20px;
     }
     .text-box{
-        width: 35vw;
+        width: 40vw;
         margin-left: 2vw;
-    }
-}
-@media screen and (min-width: 1605px) and (max-width: 1920px){
-    nav ul li{
-        margin: 10px 10px;
-    }
-    nav ul li a{
-        font-size: 15px;
-    }
-    .logo{
-        width: 50px;
-        height: 45px;
-    }
-    nav .toggle_btn{
-        display: none;
-    }
-    .dropdown_menu{
-        display: none;
-    }
-    /* CONTENT */
-    .images{
-        margin: 3vw;
-    }
-    .images ol{
-        columns: 2;
-        column-gap: 8vw;
-        column-width: 40vw;
-    }
-    .images img{
-        width: 500px;
-        margin: 20px 0;
-    }
-    .images p{
-        font-size: 15px;
-    }
-    .images li{
-        font-size: larger;
-    }
-    .text-box{
-        width: 30vw;
-        margin-left: 7vw;
     }
 }
