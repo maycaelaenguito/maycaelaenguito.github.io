@@ -135,6 +135,14 @@ footer p{
 .images, .images-col2{
     text-align: center;
 }
+.images img:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.images-col2 img:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
 .images p, .images-col2 p{
     text-align: left;
     font-size: 10px;
@@ -147,6 +155,7 @@ footer p{
     width: 200px;
     margin: 10px;
     border-radius: 10px;
+    transition: .5s;
 }
 .images li, .images-col2 li{
     list-style: upper-roman;
@@ -228,7 +237,6 @@ h1{
     }
     nav .toggle_btn{
         display: block;
-
     }
     .dropdown_menu{
         width: 250px;
@@ -249,7 +257,7 @@ h1{
         margin: 0 4vw;
     }
     .images img, .images-col2 img{
-        width: 180px;
+        width: 150px;
     }
     .images ol li, .images-col2 ol li{
         margin: 3vw;
@@ -310,7 +318,7 @@ h1{
         font-size: 10px;
     }
     .images img, .images-col2 img{
-        width: 350px;
+        width: 320px;
     }
     .images, .images-col2{
         margin: 0 2vw;
@@ -340,7 +348,7 @@ h1{
         margin: 2vw;
     }
     .images img, .images-col2 img{
-        width: 500px;
+        width: 450px;
         margin: 20px 0;
     }
     .images p, .images-col2 p{

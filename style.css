@@ -115,10 +115,10 @@ nav .toggle_btn{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 15px;
     border: 1.7px solid white;
     border-style: dashed;
-    padding: 14px;
+    padding: 5px;
   }
   .overlay{
     position: absolute;
@@ -173,7 +173,7 @@ nav .toggle_btn{
     bottom: 25vh;
     left: 50vw;
     color: white;
-    background: rgba(255, 255, 255, 0.329);
+    background: #202D36;
     border-radius: 15px;
     font-family: 'Poppins';
     font-style: normal;
@@ -200,7 +200,8 @@ nav .toggle_btn{
         display: none;
     }
     .intro h1{
-        font-size: 12px;
+        width: 60vw;
+        font-size: 17px;
     }
     .overlay{
         top: 20vh;
@@ -245,6 +246,9 @@ nav .toggle_btn{
     .intro-2 p{
         bottom: 29vh;
     }
+    .intro h1{
+        font-size: 20px;
+    }
     footer{
         font-size: 10px;
         min-width: 280px;
@@ -278,6 +282,9 @@ nav .toggle_btn{
     .dropdown_menu{
         display: none;
     }
+    .intro h1{
+        font-size: 23px;
+    }
     .overlay{
         top: 23vh;
     }
@@ -286,7 +293,8 @@ nav .toggle_btn{
     }
     .text .btn{
         right: 10vw;
-        width: 170px;
+        width: 200px;
+        font-size: 18px;
     }
     footer{
         font-size: 10px;
@@ -313,12 +321,18 @@ nav .toggle_btn{
     .overlay{
         top: 30vh;
     }
+    .intro h1{
+        font-size: 27px;
+        width: 30vw;
+    }
     .intro-2 p{
         bottom: 30vh;
+        font-size: 20px;
     }
     .text .btn{
         bottom: 20vh;
         right: 10vw;
-        width: 170px;
+        width: 220px;
+        font-size: 20px;
     }
 }

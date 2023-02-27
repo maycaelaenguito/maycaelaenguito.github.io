@@ -141,9 +141,14 @@ footer p{
     letter-spacing: 0.05em;
 }
 .images img{
-    width: 200px;
+    width: 180px;
     margin: 10px;
     border-radius: 10px;
+    transition: .5s;
+}
+.images img:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .images li{
     list-style: upper-roman;
@@ -179,6 +184,7 @@ h1{
     font-size: 64px;
     letter-spacing: .1em;
 }
+
 @media screen and (min-width: 120px) and (max-width: 356px){
     nav ul{
         padding: 10px;
@@ -201,7 +207,7 @@ h1{
     font-size: xx-small;
     }
     .images img{
-        width: 200px;
+        width: 180px;
     }
     .text-box {
         margin-left: 10vw;
@@ -242,26 +248,24 @@ h1{
     }
 }
 /* TABLETS */
-@media screen and (min-width: 533px) and (max-width: 894px){
+@media screen and (min-width: 533px) and (max-width: 849px){
     nav ul li{
-        padding: 10px 3px;
-        margin-left: 10px;
+        display: none;
     }
-    nav ul li a{
-        font-size: 15px;
+    nav .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        width: 250px;
+        display: block;
+    }
+    footer{
+        font-size: 10px;
+        min-width: 280px;
     }
     .logo{
         width: 50px;
         height: 45px;
-    }
-    nav .toggle_btn{
-        display: none;
-    }
-    .dropdown_menu{
-        display: none;
-    }
-    footer{
-        font-size: 10px;
     }
     /* CONTENT */
     .grid-container{
@@ -272,10 +276,10 @@ h1{
         column-gap: 10vw;
     }
     .images img{
-        width: 200px;
+        width: 150px;
     }
 }
-@media screen and (min-width: 895px) and (max-width: 1280px){
+@media screen and (min-width: 850px) and (max-width: 1280px){
     nav ul li{
         padding: 20px 3px;
         margin-left: 10px;
@@ -307,7 +311,7 @@ h1{
         column-gap: 10vw;
     }
     .images img{
-        width: 350px;
+        width: 320px;
     }
     
 }
@@ -345,7 +349,7 @@ h1{
         column-width: 40vw;
     }
     .images img{
-        width: 500px;
+        width: 450px;
         margin: 20px 0;
     }
     .images p{
@@ -358,6 +362,7 @@ h1{
         width: 35vw;
         margin-left: 2vw;
     }
+
 }
 @media screen and (min-width: 1605px) and (max-width: 1920px){
     nav ul li{
@@ -377,8 +382,6 @@ h1{
         display: none;
     }
     /* CONTENT */
-  
-    
     .images ol li:nth-of-type(6){
         break-after: column;
     }
@@ -391,7 +394,7 @@ h1{
         column-width: 40vw;
     }
     .images img{
-        width: 500px;
+        width: 450px;
         margin: 20px 0;
     }
     .images p{
