@@ -154,7 +154,6 @@ footer p{
 .images img, .images-col2 img{
     width: 200px;
     margin: 10px;
-    border-radius: 10px;
     transition: .5s;
 }
 .images li, .images-col2 li{
