@@ -177,6 +177,7 @@ footer p{
 .grid-container .btn:hover{
     background-color: #c8750c;
     color: white;
+    transform: scale(1.2);
 }
 .text-box .btn{
     margin-bottom: 2vh;

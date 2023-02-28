@@ -181,10 +181,12 @@ nav .toggle_btn{
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
+    transition: .5s;
   }
   .text .btn:hover{
     background-color: #c8750c;
     color: white;
+    transform: scale(1.2);
   }
 /* BS ACTIVE */
   .active{
