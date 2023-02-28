@@ -441,6 +441,18 @@ section.text{
 .title img{
     margin: 0 47vw;
 }
+.text-center .btn{
+    background-color: #202D36;
+    color: #fff;
+    transition: .5s;
+    margin: 2vw;
+
+}
+.text-center .btn:hover{
+    background-color: #c8750c;
+    color: #ffffff;
+    transform: scale(1.2);
+}
 @media screen and (min-width: 120px) and (max-width: 533px){
     nav ul{
         padding: 10px;
