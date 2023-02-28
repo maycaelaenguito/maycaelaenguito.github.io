@@ -187,7 +187,22 @@ h1{
 .active{
     border-bottom: 3px solid #fff;
 }
-
+.back-to-top{
+    position: sticky;
+    bottom: 10vh;
+    margin-left: 80vw;
+}
+.back-to-top .btn{
+    background-color: #202D36;
+    color: white;
+    font-family: 'Poppins';
+    transition: .5s;
+}
+.back-to-top .btn:hover{
+    background-color: #c8750c;
+    color: white;
+    transform: scale(1.2);
+}
 @media screen and (min-width: 120px) and (max-width: 356px){
     nav ul{
         padding: 10px;
