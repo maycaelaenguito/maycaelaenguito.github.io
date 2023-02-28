@@ -445,8 +445,7 @@ section.text{
     background-color: #202D36;
     color: #fff;
     transition: .5s;
-    margin: 2vw;
-
+    margin: 1vw;
 }
 .text-center .btn:hover{
     background-color: #c8750c;
