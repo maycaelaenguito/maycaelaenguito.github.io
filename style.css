@@ -176,7 +176,7 @@ nav .toggle_btn{
     left: 50vw;
     color: white;
     background: #202D36;
-    border-radius: 15px;
+    border-radius: 20px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -186,7 +186,11 @@ nav .toggle_btn{
     background-color: #c8750c;
     color: white;
   }
-
+/* BS ACTIVE */
+  .active{
+    background: #fff;
+    color: #202D36;
+}
 
 
 @media screen and (min-width: 120px) and (max-width: 356px){

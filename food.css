@@ -168,10 +168,10 @@ footer p{
 .grid-container .btn{
     background-color: #202D36;
     color: #fff;
-    border-radius: 15px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
+    transition: .5s;
     font-size: 15px;
 }
 .grid-container .btn:hover{
@@ -186,9 +186,13 @@ footer p{
 }
 h1{
     text-transform: uppercase;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 64px;
-    letter-spacing: .1em;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .08em;
+    font-weight: 700;
+}
+.active{
+    background: #fff;
+    color: #202D36;
 }
 
 @media screen and (min-width: 120px) and (max-width: 533px){
