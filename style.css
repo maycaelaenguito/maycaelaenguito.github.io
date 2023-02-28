@@ -190,8 +190,7 @@ nav .toggle_btn{
   }
 /* BS ACTIVE */
   .active{
-    background: #fff;
-    color: #202D36;
+    border-bottom: 3px solid #fff;
 }
 
 

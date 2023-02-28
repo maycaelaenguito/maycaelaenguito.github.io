@@ -185,8 +185,7 @@ h1{
     font-weight: 700;
 }
 .active{
-    background: #fff;
-    color: #202D36;
+    border-bottom: 3px solid #fff;
 }
 
 @media screen and (min-width: 120px) and (max-width: 356px){
