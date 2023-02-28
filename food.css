@@ -204,6 +204,7 @@ h1{
     color: white;
     font-family: 'Poppins';
     transition: .5s;
+    font-size: 15px;
 }
 .back-to-top .btn:hover{
     background-color: #c8750c;
@@ -247,6 +248,9 @@ h1{
     .images ol, .images-col2 ol{
         font-size: 20px;
     }
+    .back-to-top{
+        margin-left: 60vw;
+    }
 
 }
 @media screen and (min-width: 534px) and (max-width: 727px){
@@ -279,6 +283,9 @@ h1{
     }
     .images ol li, .images-col2 ol li{
         margin: 3vw;
+    }
+    .back-to-top{
+        margin-left: 70vw;
     }
 }
 /* TABLETS */
@@ -375,5 +382,8 @@ h1{
     .text-box{
         width: 40vw;
         margin-left: 2vw;
+    }
+    .back-to-top{
+        margin-left: 85vw;
     }
 }

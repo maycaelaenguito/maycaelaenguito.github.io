@@ -197,11 +197,15 @@ h1{
     color: white;
     font-family: 'Poppins';
     transition: .5s;
+    font-size: 15px;
 }
 .back-to-top .btn:hover{
     background-color: #c8750c;
     color: white;
     transform: scale(1.2);
+}
+.back-to-top{
+    margin-left: 60vw;
 }
 @media screen and (min-width: 120px) and (max-width: 356px){
     nav ul{
@@ -264,6 +268,9 @@ h1{
         font-size: 20px;
         margin: 3vw;
     }
+    .back-to-top{
+        margin-left: 68vw;
+    }
 }
 /* TABLETS */
 @media screen and (min-width: 533px) and (max-width: 849px){
@@ -295,6 +302,9 @@ h1{
     }
     .images img{
         width: 150px;
+    }
+    .back-to-top{
+        margin-left: 78vw;
     }
 }
 @media screen and (min-width: 850px) and (max-width: 1280px){
@@ -331,7 +341,9 @@ h1{
     .images img{
         width: 320px;
     }
-    
+    .back-to-top{
+        margin-left: 84vw;
+    }
 }
 /* DESKTOPS */
 @media screen and (min-width: 1281px) and (max-width: 1604px){
@@ -380,6 +392,9 @@ h1{
         width: 35vw;
         margin-left: 2vw;
     }
+    .back-to-top{
+        margin-left: 85vw;
+    }
 
 }
 @media screen and (min-width: 1605px) and (max-width: 1920px){
@@ -425,5 +440,7 @@ h1{
         width: 30vw;
         margin-left: 7vw;
     }
-    
+    .back-to-top{
+        margin-left: 85vw;
+    }
 }
