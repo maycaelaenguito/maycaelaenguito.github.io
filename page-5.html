@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="pages.css">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@500;700;800&family=Open+Sans:wght@800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Boostrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awseome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Halo-halo </title>
+    <!-- Web Icon -->
+    <link rel="icon" type="image/png" href="images/1.png">
+  <style>
+
+  </style>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+      <nav>
+          <a href="index.html"><img src="images/logo-white.png" class="logo"></a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="content.html">Contents</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="travel.html">Travel</a></li>
+            </ul>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- DROPDOWN MENU -->
+          <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="content.html">Contents</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="travel.html">Travel</a></li>
+          </div>
+      </nav>
+      <!-- CONTENT SECTION -->
+      <section class="sec17"></section>
+      <div class="title">
+        <h1 class="text-center">Halo-halo</h1>
+        <p class="text-center">By: Maycaela Enguito</p>
+      </div>
+      <section class="text">
+        <p>Halo-halo is a popular Filipino dessert that has gained a following around the world due to its unique blend of flavors and textures. The name "halo-halo" literally means "mix-mix" in Tagalog, which is a fitting description for this dessert that is made by combining various ingredients.
+        <br><br>
+        Traditionally, halo-halo is made with shaved ice, evaporated milk, and a combination of fruits, beans, jellies, and other sweet toppings. Each component is layered on top of the shaved ice, and then the entire mixture is stirred together before eating. This results in a delicious combination of creamy, crunchy, and chewy textures, all topped off with a refreshing icy finish.
+        <br><br>
+        The ingredients used in halo-halo can vary widely depending on the region and personal preference. Some common components include sweetened red beans, coconut gel, jackfruit, sago pearls, and tapioca. Other popular toppings include ube (purple yam) jam, leche flan (custard), and crushed peanuts.
+        </p>
+      </section>
+      <section class="sec18"></section>
+      <section class="text">
+        <p>One of the reasons that halo-halo has become so popular is because of its versatility. While the basic components remain the same, the toppings can be customized to suit individual tastes. Some people prefer a more fruit-heavy version of the dessert, while others like to load up on the jellies and beans. The amount of sweetened milk used can also be adjusted to create a creamier or lighter texture.
+        </p>
+      </section>
+      <section class="sec19"></section>
+      <section class="text">
+        <p>In addition to its delicious taste and customizable nature, halo-halo is also a visual delight. The colorful array of ingredients layered on top of the ice creates a stunning rainbow effect that is sure to catch the eye. This makes it a popular choice for special occasions, such as birthdays or fiestas.</p>
+      </section>
+      <section class="sec20"></section>
+      <section class="text">
+        <p>
+        While halo-halo is primarily enjoyed as a dessert, it can also be a refreshing treat on a hot day. The shaved ice provides a cooling sensation that is perfect for beating the heat. Some people even eat it for breakfast, as a way to start the day off on a sweet note.
+        <br><br>
+        Halo-halo is more than just a dessert - it's a cultural icon that represents the rich and diverse culinary traditions of the Philippines. It has become a beloved dish around the world, and is often featured on menus at Filipino restaurants. Whether you're a seasoned halo-halo veteran or a first-time taster, there's no denying the deliciousness of this one-of-a-kind dessert.</p>
+      </section>
+      
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <h2>Thank you for reading!</h2>
+      <p>Web Designed by: Maycaela Enguito</p>
+    </footer>
+    </div>
+
+    <!-- JAVASCRIPT -->
+     <script>
+      const toggle_btn = document.querySelector('.toggle_btn')
+      const toggleBtIcon = document.querySelector('.toggle_btn i')
+      const dropdown_menu = document.querySelector('.dropdown_menu')
+
+      toggle_btn.onclick = function (){
+        dropdown_menu.classList.toggle('open')
+        const isOpen = dropdown_menu.classList.contains('open')
+
+        toggleBtIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

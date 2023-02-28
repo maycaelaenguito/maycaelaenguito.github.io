@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="pages.css">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@500;700;800&family=Open+Sans:wght@800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Boostrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awseome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Singapore </title>
+    <!-- Web Icon -->
+    <link rel="icon" type="image/png" href="images/1.png">
+  <style>
+
+  </style>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+      <nav>
+          <a href="index.html"><img src="images/logo-white.png" class="logo"></a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="content.html">Contents</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="travel.html">Travel</a></li>
+            </ul>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- DROPDOWN MENU -->
+          <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="content.html">Contents</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="travel.html">Travel</a></li>
+          </div>
+      </nav>
+      <!-- CONTENT SECTION -->
+      <section class="sec41"></section>
+      <div class="title">
+        <h1 class="text-center">Singapore</h1>
+        <p class="text-center">By: Maycaela Enguito</p>
+      </div>
+      <section class="text">
+        <p>Singapore is a vibrant and exciting destination for travelers of all ages and interests. From its bustling city streets to its lush gardens and diverse neighborhoods, Singapore has something for everyone. Whether you’re looking for a relaxing getaway or an action-packed adventure, Singapore has it all.
+        <br><br>
+        For those looking to explore Singapore on a budget, there are plenty of options. The city is well-connected by public transportation, making it easy to get around without spending a fortune. Additionally, there are plenty of affordable accommodation options, from hostels to budget hotels. Food is also very affordable in Singapore, with many hawker centers offering delicious meals for just a few dollars.
+        <br><br>
+        For those looking to explore the city’s attractions, there are plenty of options. The iconic Marina Bay Sands is a must-see, with its iconic infinity pool and stunning views of the city skyline. The Gardens by the Bay is another popular attraction, with its lush gardens and iconic Supertree Grove. The Singapore Zoo is also a great place to visit, with its wide variety of animals and interactive exhibits.
+        </p>
+      </section>
+      <section class="sec42"></section>
+      <section class="text">
+      <p>For those looking to experience the culture of Singapore, there are plenty of options. Chinatown is a great place to explore, with its colorful streets and bustling markets. Little India is another great option, with its vibrant colors and delicious cuisine. Additionally, the National Museum of Singapore is a great place to learn about the country’s history and culture.
+      </p>
+      </section>
+      <section class="sec43"></section>
+      <section class="text">
+        <p>Finally, for those looking for a unique experience, Singapore has plenty to offer. From its world-class shopping to its vibrant nightlife, there is something for everyone. The Singapore Flyer is a great way to get a bird’s eye view of the city, while the Singapore Botanic Gardens offer a tranquil escape from the hustle and bustle of the city.
+        </p>
+      </section>
+      <section class="sec44"></section>
+      <section class="text">
+        <p>Singapore is an incredible destination for travelers of all ages and interests. With its vibrant culture, stunning attractions, and affordable prices, it’s no wonder why Singapore is one of the most popular destinations in the world. Whether you’re looking for a relaxing getaway or an action-packed adventure, Singapore has something for everyone
+        </p>
+      </section>
+      
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <h2>Thank you for reading!</h2>
+      <p>Web Designed by: Maycaela Enguito</p>
+    </footer>
+    </div>
+
+    <!-- JAVASCRIPT -->
+     <script>
+      const toggle_btn = document.querySelector('.toggle_btn')
+      const toggleBtIcon = document.querySelector('.toggle_btn i')
+      const dropdown_menu = document.querySelector('.dropdown_menu')
+
+      toggle_btn.onclick = function (){
+        dropdown_menu.classList.toggle('open')
+        const isOpen = dropdown_menu.classList.contains('open')
+
+        toggleBtIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

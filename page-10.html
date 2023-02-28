@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="pages.css">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@500;700;800&family=Open+Sans:wght@800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Boostrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awseome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Grindelwald </title>
+    <!-- Web Icon -->
+    <link rel="icon" type="image/png" href="images/1.png">
+  <style>
+
+  </style>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+      <nav>
+          <a href="index.html"><img src="images/logo-white.png" class="logo"></a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="content.html">Contents</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="travel.html">Travel</a></li>
+            </ul>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- DROPDOWN MENU -->
+          <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="content.html">Contents</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="travel.html">Travel</a></li>
+          </div>
+      </nav>
+      <!-- CONTENT SECTION -->
+      <section class="sec37"></section>
+      <div class="title">
+        <h1 class="text-center">Grindelwald</h1>
+        <p class="text-center">By: Maycaela Enguito</p>
+      </div>
+      <section class="text">
+        <p>Grindelwald is a picturesque alpine village located in the Bernese Oberland of Switzerland. It is known for its breathtaking views of the surrounding mountains, crystal-clear lakes, and charming chalets. In this 500-word travel magazine blog, I will explore the best things to do and see in Grindelwald, as well as provide useful tips for travelers.
+        <br><br>
+        First, let’s start with the basics. Grindelwald is located in the heart of the Swiss Alps, and is easily accessible by train or car. The village is known for its stunning scenery, which includes the famous Eiger mountain, the Wetterhorn, and the Jungfrau.
+        <br><br>
+        One of the best things to do in Grindelwald is to take a cable car to the top of one of the surrounding mountains. The First cable car takes visitors to the top of the First mountain, which offers stunning views of the surrounding peaks. At the top, visitors can enjoy hiking trails, a zip line, a cliff walk, and a restaurant with panoramic views. Another popular cable car is the Jungfrau Railway, which takes visitors to the top of the Jungfraujoch – the highest railway station in Europe.
+        </p>
+      </section>
+      <section class="sec38"></section>
+      <section class="text">
+      <p>In addition to exploring the mountains, visitors should also take time to explore the village of Grindelwald. The village has a charming, traditional feel, with wooden chalets and flower-filled balconies. Some of the most popular attractions in the village include the Grindelwald Museum, the Pfingstegg Toboggan Run, and the Eiger Trail.
+      </p>
+      </section>
+      <section class="sec39"></section>
+      <section class="text">
+        <p>When visiting Grindelwald, it is important to try some of the local Swiss cuisine. Some of the most popular Swiss dishes include fondue, raclette, and rösti. These dishes are typically made with local ingredients, including Swiss cheese, potatoes, and cured meats. Visitors can enjoy these dishes at one of the many restaurants in Grindelwald, or at a traditional Swiss chalet in the surrounding mountains.
+          <br><br>
+          Finally, no trip to Grindelwald would be complete without experiencing some of the local outdoor activities. In the winter, visitors can enjoy skiing, snowboarding, and ice skating. In the summer, visitors can enjoy hiking, mountain biking, and paragliding. There are also plenty of opportunities for water sports, including swimming, kayaking, and paddleboarding on the nearby lakes
+        </p>
+      </section>
+      <section class="sec40"></section>
+      <section class="text">
+        <p>When traveling to Grindelwald, it is important to remember that the village is located at a high altitude, and visitors may experience altitude sickness. It is recommended to drink plenty of water, avoid alcohol and caffeine, and take time to acclimate to the altitude. Visitors should also be prepared for changing weather conditions, as the weather in the mountains can be unpredictable. <br><br>
+          In conclusion, Grindelwald is a Swiss alpine gem that offers something for everyone. From exploring the mountains to experiencing the local cuisine, visitors can make the most of their time in this breathtaking village. With its stunning scenery and charming chalets, Grindelwald is a must-visit destination for any traveler.
+        </p>
+      </section>
+      
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <h2>Thank you for reading!</h2>
+      <p>Web Designed by: Maycaela Enguito</p>
+    </footer>
+    </div>
+
+    <!-- JAVASCRIPT -->
+     <script>
+      const toggle_btn = document.querySelector('.toggle_btn')
+      const toggleBtIcon = document.querySelector('.toggle_btn i')
+      const dropdown_menu = document.querySelector('.dropdown_menu')
+
+      toggle_btn.onclick = function (){
+        dropdown_menu.classList.toggle('open')
+        const isOpen = dropdown_menu.classList.contains('open')
+
+        toggleBtIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

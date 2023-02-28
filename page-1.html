@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="pages.css">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@500;700;800&family=Open+Sans:wght@800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Boostrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awseome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Kare-Kare</title>
+    <!-- Web Icon -->
+    <link rel="icon" type="image/png" href="images/1.png">
+  <style>
+
+  </style>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+      <nav>
+          <a href="index.html"><img src="images/logo-white.png" class="logo"></a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="content.html">Contents</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="travel.html">Travel</a></li>
+            </ul>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- DROPDOWN MENU -->
+          <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="content.html">Contents</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="travel.html">Travel</a></li>
+          </div>
+      </nav>
+      <!-- CONTENT SECTION -->
+      <section class="sec1"></section>
+      <div class="title">
+        <h1 class="text-center">Kare-Kare</h1>
+        <p class="text-center">By: Maycaela Enguito</p>
+      </div>
+      <section class="text">
+        <p>Kare Kare is a popular Filipino dish that is known for its savory and nutty flavor. It is typically made with oxtail, vegetables such as eggplant and bok choy, and a thick peanut sauce. The dish is often served with steamed rice and a side of shrimp paste.
+
+        Kare Kare is believed to have originated from the Pampanga region of the Philippines and has since become a beloved dish across the country. Its rich and flavorful sauce is created by simmering peanuts and toasted rice until they are blended into a smooth paste. The sauce is then combined with a variety of spices and cooked with the meat and vegetables until they are tender and infused with flavor.
+        </p>
+      </section>
+      <section class="sec2"></section>
+      <section class="text">
+        <p>The key ingredient in kare-kare is the peanut sauce, which gives the dish its distinctive flavor. The sauce is made by sautéing garlic and onions, then adding ground roasted peanuts, rice flour, and water or broth. The mixture is simmered until it thickens and the flavors meld together.
+
+        In addition to the peanut sauce, kare-kare also contains a variety of vegetables such as eggplant, pechay (Chinese cabbage), and sitaw (long beans). Some versions also include banana blossoms and bok choy. The meat used in kare-kare can vary, but the most common choices are beef, oxtail, or tripe. The meat is typically boiled until tender before being added to the stew.
+        </p>
+      </section>
+      <section class="sec3"></section>
+      <section class="text">
+        <p>Kare-kare is a labor-intensive dish that requires several steps. The meat is first boiled until tender and set aside. The vegetables are then blanched in boiling water and set aside. The peanut sauce is made separately and simmered until it thickens. Once the sauce is ready, the meat and vegetables are added and allowed to cook until everything is heated through.
+
+        Kare-kare is a labor-intensive dish that requires several steps. The meat is first boiled until tender and set aside. The vegetables are then blanched in boiling water and set aside. The peanut sauce is made separately and simmered until it thickens. Once the sauce is ready, the meat and vegetables are added and allowed to cook until everything is heated through.
+        </p>
+      </section>
+      <section class="sec4"></section>
+      <section class="text">
+        <p>While the classic kare-kare recipe is made with beef, oxtail, or tripe, there are many variations of the dish. Some versions use seafood such as shrimp, squid, or mussels. Vegetarian versions are also popular and use tofu or seitan instead of meat. Some cooks even add a twist to the dish by using peanut butter or adding coconut milk to the sauce.
+
+        In conclusion, Kare Kare is a unique and flavorful dish that is a must-try for anyone interested in Filipino cuisine. Its complex flavors and cultural significance make it a beloved dish that is sure to impress even the most discerning foodies.</p>
+      </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <h2>Thank you for reading!</h2>
+      <p>Web Designed by: Maycaela Enguito</p>
+    </footer>
+    </div>
+
+    <!-- JAVASCRIPT -->
+     <script>
+      const toggle_btn = document.querySelector('.toggle_btn')
+      const toggleBtIcon = document.querySelector('.toggle_btn i')
+      const dropdown_menu = document.querySelector('.dropdown_menu')
+
+      toggle_btn.onclick = function (){
+        dropdown_menu.classList.toggle('open')
+        const isOpen = dropdown_menu.classList.contains('open')
+
+        toggleBtIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="pages.css">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@500;700;800&family=Open+Sans:wght@800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Boostrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awseome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Barcelona </title>
+    <!-- Web Icon -->
+    <link rel="icon" type="image/png" href="images/1.png">
+  <style>
+
+  </style>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+      <nav>
+          <a href="index.html"><img src="images/logo-white.png" class="logo"></a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="content.html">Contents</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="travel.html">Travel</a></li>
+            </ul>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- DROPDOWN MENU -->
+          <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="content.html">Contents</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="travel.html">Travel</a></li>
+          </div>
+      </nav>
+      <!-- CONTENT SECTION -->
+      <section class="sec33"></section>
+      <div class="title">
+        <h1 class="text-center">Barcelona</h1>
+        <p class="text-center">By: Maycaela Enguito</p>
+      </div>
+      <section class="text">
+        <p>Barcelona is an incredible city with a vibrant culture, stunning architecture, and a rich history. From its outdoor markets to its world-renowned restaurants, Barcelona is a must-visit destination for any traveler. In this 500-word travel magazine blog, I will explore the best things to do and see in Barcelona, as well as provide useful tips for travelers.
+        <br><br>
+        First, let’s start with the basics. Barcelona is located in the Catalonia region of Spain, and is the capital of the autonomous community of Catalonia. The city is known for its unique architecture, which is heavily influenced by the works of Antoni Gaudí. Gaudí’s most famous works in Barcelona include the Sagrada Família, Park Güell, and Casa Milà.
+        <br><br>
+        When visiting Barcelona, it is important to explore the city’s outdoor markets. One of the most popular markets is La Boqueria, located in the city’s historic Gothic Quarter. Here, visitors can find a variety of fresh produce, seafood, and other local delicacies. Another popular market is Mercat de Sant Antoni, which is known for its vintage clothing and antiques.
+        </p>
+      </section>
+      <section class="sec34"></section>
+      <section class="text">
+      <p>In addition to exploring the markets, visitors should also take time to visit some of Barcelona’s world-renowned restaurants. From traditional tapas bars to Michelin-starred restaurants, Barcelona has something for everyone. Some of the most popular restaurants in the city include El Quim de la Boqueria, Cinc Sentits, and Tickets.
+      </p>
+      </section>
+      <section class="sec35"></section>
+      <section class="text">
+        <p>Finally, no trip to Barcelona would be complete without a visit to some of the city’s iconic landmarks. The Sagrada Família is a must-see, as well as Park Güell and Casa Milà. Other popular attractions include the Picasso Museum, the Barcelona Cathedral, and the Palau de la Música Catalana.
+          <br><br>
+          When visiting Barcelona, it is important to remember that the city has two official languages: Spanish and Catalan. Knowing some basic phrases in both languages can be helpful when navigating the city. Some useful Spanish phrases include “Hola” (hello), “Gracias” (thank you), and “Adiós” (goodbye). In Catalan, some useful phrases include “Hola” (hello), “Gràcies” (thank you), and “Adéu” (goodbye).
+        </p>
+      </section>
+      <section class="sec36"></section>
+      <section class="text">
+        <p>Traveling to Barcelona can be an incredible experience, and with the right planning and preparation, visitors can make the most of their time in the city. From exploring the markets to visiting the iconic landmarks, Barcelona has something for everyone.
+        </p>
+      </section>
+      
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <h2>Thank you for reading!</h2>
+      <p>Web Designed by: Maycaela Enguito</p>
+    </footer>
+    </div>
+
+    <!-- JAVASCRIPT -->
+     <script>
+      const toggle_btn = document.querySelector('.toggle_btn')
+      const toggleBtIcon = document.querySelector('.toggle_btn i')
+      const dropdown_menu = document.querySelector('.dropdown_menu')
+
+      toggle_btn.onclick = function (){
+        dropdown_menu.classList.toggle('open')
+        const isOpen = dropdown_menu.classList.contains('open')
+
+        toggleBtIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="pages.css">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@500;700;800&family=Open+Sans:wght@800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Boostrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awseome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Paris </title>
+    <!-- Web Icon -->
+    <link rel="icon" type="image/png" href="images/1.png">
+  <style>
+
+  </style>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+      <nav>
+          <a href="index.html"><img src="images/logo-white.png" class="logo"></a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="content.html">Contents</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="travel.html">Travel</a></li>
+            </ul>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- DROPDOWN MENU -->
+          <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="content.html">Contents</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="travel.html">Travel</a></li>
+          </div>
+      </nav>
+      <!-- CONTENT SECTION -->
+      <section class="sec21"></section>
+      <div class="title">
+        <h1 class="text-center">Paris</h1>
+        <p class="text-center">By: Maycaela Enguito</p>
+      </div>
+      <section class="text">
+        <p>Paris is a city that has captivated the hearts of people around the world for centuries. Known as the "City of Light," it is a place that is steeped in history, culture, and romance. From its iconic landmarks to its world-class museums and galleries, Paris is a city that truly has something for everyone.
+        <br><br>
+        Perhaps the most famous landmark in Paris is the Eiffel Tower. Built in 1889 for the World's Fair, this towering monument stands at over 1,000 feet tall and offers stunning views of the city from its observation decks. Visitors can take the elevator or climb the stairs to the top, where they can enjoy a bird's eye view of the city's streets, parks, and landmarks.
+        <br><br>
+        Another iconic landmark in Paris is the Arc de Triomphe. Located at the western end of the Champs-Élysées, this triumphal arch was built to commemorate the victories of the French army. Visitors can climb to the top of the arch for breathtaking views of the city, or simply admire the intricate carvings and sculptures that decorate its façade.
+        </p>
+      </section>
+      <section class="sec22"></section>
+      <section class="text">
+        <p>Another popular museum in Paris is the Musée d'Orsay, which is housed in a stunning former railway station. The museum is home to a collection of Impressionist and Post-Impressionist art, including works by Van Gogh, Monet, and Renoir. Visitors can also explore the museum's collection of decorative arts, including furniture, ceramics, and jewelry.
+        <br><br>
+        Of course, no visit to Paris would be complete without a stroll along the banks of the Seine River. The river runs through the heart of the city, and its picturesque banks are lined with historic bridges, charming cafes, and bustling bookstalls. Visitors can take a leisurely boat ride along the river, or simply enjoy a picnic on the grassy banks while watching the world go by.</p>
+      </section>
+      <section class="sec23"></section>
+      <section class="text">
+        <p>Paris is also known for its world-class cuisine, from buttery croissants to hearty boeuf bourguignon. Visitors can indulge in French delicacies at Michelin-starred restaurants or cozy bistros, or simply pick up a baguette and some cheese from a local market for a classic Parisian picnic.</p>
+      </section>
+      <section class="sec24"></section>
+      <section class="text">
+        <p>In addition to its cultural and culinary attractions, Paris is also a city that is steeped in romance. From the charming alleyways of Montmartre to the tree-lined avenues of the Champs-Élysées, there are countless spots in the city that are perfect for a romantic rendezvous. Couples can stroll hand in hand through the Jardin des Tuileries or enjoy a candlelit dinner overlooking the twinkling lights of the Eiffel Tower.
+        <br><br>
+        In conclusion, Paris is a city that truly has something for everyone. Whether you're a history buff, an art lover, a foodie, or simply looking for a romantic getaway, this city will captivate your heart and leave you longing to return again and again.</p>
+      </section>
+      
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <h2>Thank you for reading!</h2>
+      <p>Web Designed by: Maycaela Enguito</p>
+    </footer>
+    </div>
+
+    <!-- JAVASCRIPT -->
+     <script>
+      const toggle_btn = document.querySelector('.toggle_btn')
+      const toggleBtIcon = document.querySelector('.toggle_btn i')
+      const dropdown_menu = document.querySelector('.dropdown_menu')
+
+      toggle_btn.onclick = function (){
+        dropdown_menu.classList.toggle('open')
+        const isOpen = dropdown_menu.classList.contains('open')
+
+        toggleBtIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -303,7 +303,7 @@ h1{
     .images ol li:nth-of-type(6){
         break-after: column;
     }
-    .images ol .text-box:nth-of-type(n+5){
+    .images ol .text-box:nth-of-type(n+12){
         break-inside: avoid;
     }
     .images ol{
@@ -340,7 +340,7 @@ h1{
     .images ol li:nth-of-type(6){
         break-after: column;
     }
-    .images ol .text-box:nth-of-type(n+5){
+    .images ol .text-box:nth-of-type(n+12){
         break-inside: avoid;
     }
     .images ol{
@@ -385,7 +385,7 @@ h1{
     .images ol li:nth-of-type(6){
         break-after: column;
     }
-    .images ol .text-box:nth-of-type(n+5){
+    .images ol .text-box:nth-of-type(n+12){
         break-inside: avoid;
     }
     .images ol{

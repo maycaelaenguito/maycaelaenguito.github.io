@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="pages.css">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@500;700;800&family=Open+Sans:wght@800&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Boostrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awseome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Palawan </title>
+    <!-- Web Icon -->
+    <link rel="icon" type="image/png" href="images/1.png">
+  <style>
+
+  </style>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+      <nav>
+          <a href="index.html"><img src="images/logo-white.png" class="logo"></a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="content.html">Contents</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="travel.html">Travel</a></li>
+            </ul>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- DROPDOWN MENU -->
+          <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="content.html">Contents</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="travel.html">Travel</a></li>
+          </div>
+      </nav>
+      <!-- CONTENT SECTION -->
+      <section class="sec25"></section>
+      <div class="title">
+        <h1 class="text-center">Palawan</h1>
+        <p class="text-center">By: Maycaela Enguito</p>
+      </div>
+      <section class="text">
+        <p>Palawan is a tropical paradise located in the southwestern part of the Philippines. With its pristine beaches, crystal-clear waters, and stunning limestone cliffs, it's no wonder why Palawan has consistently been ranked as one of the best islands in the world.
+        <br><br>
+        One of the most popular tourist destinations in Palawan is El Nido. Known for its majestic limestone cliffs and clear blue waters, El Nido offers a variety of activities such as island hopping, snorkeling, and diving. Visitors can explore the hidden lagoons and beaches, or take a sunset cruise to marvel at the stunning natural beauty of the area.
+        <br><br>
+        Another must-visit destination in Palawan is Coron. Famous for its World War II shipwrecks, Coron has become a popular destination for scuba divers. The sunken ships, which are now home to a variety of marine life, are a testament to the island's rich history and cultural heritage. Visitors can also explore the picturesque lakes and lagoons of Coron, or take a dip in the natural hot springs.
+        </p>
+      </section>
+      <section class="sec26"></section>
+      <section class="text">
+      <p>For those who want to experience a more secluded getaway, Port Barton is the perfect destination. Located on the west coast of Palawan, Port Barton boasts pristine beaches and crystal-clear waters, perfect for swimming, snorkeling, or simply lounging under the sun. The town is small and quiet, with only a handful of restaurants and accommodations, making it the ideal place to relax and unwind.</p>
+      </section>
+      <section class="sec27"></section>
+      <section class="text">
+        <p>Palawan is also home to one of the world's longest underground rivers, the Puerto Princesa Underground River. The river is located in a national park and has been designated as a UNESCO World Heritage Site. Visitors can take a boat tour through the cave system, which is filled with impressive stalactites and stalagmites, while marveling at the stunning natural formations.
+          <br><br>
+          Aside from its natural wonders, Palawan is also known for its vibrant culture and delicious cuisine. Visitors can sample local delicacies such as grilled seafood, adobo, and sisig, or join in traditional festivities such as the Baragatan Festival, which celebrates the culture and heritage of the island.
+        </p>
+      </section>
+      <section class="sec28"></section>
+      <section class="text">
+        <p>Overall, Palawan is a truly magical destination that offers something for everyone. Whether you're looking for adventure, relaxation, or a cultural experience, Palawan has it all. With its breathtaking natural beauty and warm hospitality, it's no wonder why Palawan has become one of the most sought-after travel destinations in the world.</p>
+      </section>
+      
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <h2>Thank you for reading!</h2>
+      <p>Web Designed by: Maycaela Enguito</p>
+    </footer>
+    </div>
+
+    <!-- JAVASCRIPT -->
+     <script>
+      const toggle_btn = document.querySelector('.toggle_btn')
+      const toggleBtIcon = document.querySelector('.toggle_btn i')
+      const dropdown_menu = document.querySelector('.dropdown_menu')
+
+      toggle_btn.onclick = function (){
+        dropdown_menu.classList.toggle('open')
+        const isOpen = dropdown_menu.classList.contains('open')
+
+        toggleBtIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@500;600;700;800;900&family=Open+Sans:wght@800&family=Playfair+Display:wght@800&family=Poppins:wght@300;400;500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+/* NAVIGATION BAR */
+nav{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px 20px;  
+    background-color: #202D36;
+}
+.logo{
+    width: 50px;
+    height: 45px;
+}
+nav ul{
+    flex: 1;
+    text-align: center;
+    padding-right: 10px;
+    margin-right: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+nav ul li a:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    transition: width 0.3s;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+nav .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-right: 10px;
+}
+.dropdown_menu{
+  position: absolute;  
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: #c8750c;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 150px;
+}
+.dropdown_menu li{
+    list-style-type: none;
+    margin: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu a:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+}
+.dropdown_menu a:hover:after{
+    width: 100%;
+}
+  /* Footer */
+  footer {
+    position: relative;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    background: #202D36;
+    color: white;
+}
+footer h2{
+    margin-top: 10px;
+    font-family: 'Comforter Brush';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+footer p{
+    font-family: 'Poppins';
+    letter-spacing: .5em;
+    padding: 10px;
+    font-size: 10px;
+}
+section{
+    width: 100%;
+    height: 70vh;
+    box-sizing: border-box;
+}
+/* PARALLAX SCROLLING EFFECT */
+/* PAGE 1 */
+section.sec1{
+    background: url(images/kare-kare.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec2{
+    background: url(images/k1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec3{
+    background: url(images/k2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec4{
+    background: url(images/k3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* PAGE 2 */
+section.sec5{
+    background: url(images/r1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec6{
+    background: url(images/r2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec7{
+    background: url(images/r3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec8{
+    background: url(images/r4.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* PAGE 3 */
+section.sec9{
+    background: url(images/b1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec10{
+    background: url(images/b2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec11{
+    background: url(images/b3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec12{
+    background: url(images/b4.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* PAGE 4 */
+section.sec13{
+    background: url(images/t1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec14{
+    background: url(images/t2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec15{
+    background: url(images/t3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec16{
+    background: url(images/t4.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* PAGE 5 */
+section.sec17{
+    background: url(images/h1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec18{
+    background: url(images/h2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec19{
+    background: url(images/h3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec20{
+    background: url(images/h4.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* PAGE 6 */
+section.sec21{
+    background: url(images/p2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec22{
+    background: url(images/p1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec23{
+    background: url(images/p3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec24{
+    background: url(images/pa4.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* PAGE 7 */
+section.sec25{
+    background: url(images/pa2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec26{
+    background: url(images/pa1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec27{
+    background: url(images/pa3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec28{
+    background: url(images/pa4.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* PAGE 8 */
+section.sec29{
+    background: url(images/m1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec30{
+    background: url(images/m2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec31{
+    background: url(images/m3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec32{
+    background: url(images/m4.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* PAGE 9 */
+section.sec33{
+    background: url(images/ba1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec34{
+    background: url(images/ba2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec35{
+    background: url(images/ba3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec36{
+    background: url(images/ba4.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* PAGE 10 */
+section.sec37{
+    background: url(images/g4.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec38{
+    background: url(images/g2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec39{
+    background: url(images/g3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec40{
+    background: url(images/g1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* PAGE 11 */
+section.sec41{
+    background: url(images/s1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec42{
+    background: url(images/s2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec43{
+    background: url(images/s3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec44{
+    background: url(images/s4.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* PAGE 12 */
+section.sec45{
+    background: url(images/ma1.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec46{
+    background: url(images/ma2.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec47{
+    background: url(images/ma3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec48{
+    background: url(images/ma4.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/* TEXT SECTION */
+section.text{
+    padding: 50px 25vw;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    transition: 1s;
+}
+.title{
+    margin-top: 3vw;
+    font-family: 'Poppins', sans-serif;
+}
+.title img{
+    margin: 0 47vw;
+}
+@media screen and (min-width: 120px) and (max-width: 533px){
+    nav ul{
+        padding: 10px;
+    }
+    nav .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        width: 220px;
+        display: block;
+    }
+    nav ul li{
+        display: none;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+    footer{
+    font-size: xx-small;
+    }
+    section.text{
+        font-size: 12px;
+        padding: 50px 15vw;
+    }
+
+}
+@media screen and (min-width: 534px) and (max-width: 727px){
+    nav ul li{
+        display: none;
+    }
+    nav .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        width: 250px;
+        display: block;
+    }
+    footer{
+        font-size: 10px;
+        min-width: 280px;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+    section.text{
+        font-size: 13px;
+        padding: 50px 15vw;
+    }
+}
+/* TABLETS */
+@media screen and (min-width: 728px) and (max-width: 894px){
+    nav ul li{
+        padding: 10px 3px;
+        margin-left: 10px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+    nav .toggle_btn{
+        display: none;
+    }
+    .dropdown_menu{
+        display: none;
+    }
+    footer{
+        font-size: 10px;
+    }section.text{
+        padding: 50px 15vw;
+    }
+}
+@media screen and (min-width: 895px) and (max-width: 1280px){
+    nav ul li{
+        padding: 20px 3px;
+        margin-left: 10px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+    nav .toggle_btn{
+        display: none;
+    }
+    .dropdown_menu{
+        display: none;
+    }
+    footer{
+        font-size: 10px;
+    }
+}
+/* DESKTOPS */
+@media screen and (min-width: 1281px) and (max-width: 1920px){
+    nav ul li{
+        margin: 10px 10px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .logo{
+        width: 50px;
+        height: 45px;
+    }
+    nav .toggle_btn{
+        display: none;
+    }
+    .dropdown_menu{
+        display: none;
+    }
+}
